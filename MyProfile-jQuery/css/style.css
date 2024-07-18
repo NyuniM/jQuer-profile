@@ -1,0 +1,251 @@
+/* PC、SP共通 */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ナビゲーションメニューのMyProfileの部分 */
+.home {
+  border: 1px solid black;
+  padding: 0 20px;
+  margin-left: 20px;
+}
+
+/* メニューの余白 */
+.menu {
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+
+/* メニューのリンク装飾 */
+.home:link,
+.menu:link {
+  color: black;
+}
+
+.home:visited,
+.menu:visited {
+  color: black;
+}
+
+.home:hover,
+.menu:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.home:active,
+.menu:active {
+  color: black;
+}
+
+
+
+/* 画像 */
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.mainpic {
+  width: 100%;
+}
+
+/* フッター */
+footer>p {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+  /* PC用のスタイルを全部書く */
+
+  .nav-pc {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 767px;
+    justify-content: space-between;
+  }
+
+  .nav-pc>div {
+    display: flex;
+    align-items: center;
+  }
+
+  .home,
+  .menu {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 34px;
+    color: black;
+  }
+
+  h2 {
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+  }
+  
+  p,
+  li {
+    font-size: 18px;
+  }
+  
+
+  /* About */
+  .about {
+    max-width: 767px;
+    margin: 20px auto;
+  }
+
+  .item-about {
+    display: flex;
+    justify-content: center;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .circle {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 3px solid #999;
+    padding: 3px;
+  }
+
+  .content {
+    margin: 0;
+    padding-left: 50px;
+    align-content: center;
+  }
+
+  /* Works */
+  .works {
+    max-width: 767px;
+    margin: 20px auto;
+
+  }
+
+  .item-works {
+    display: flex;
+    justify-content: center;
+  }
+
+  .item-works>div {
+    max-width: 30%;
+    padding: 10px;
+  }
+
+}
+
+
+/* 画面幅が767px以下のとき */
+@media screen and (max-width: 767px) {
+
+  /* スマートフォン用のスタイルを全部書く */
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+  .nav-sp {
+    display: flex;
+    margin: 20px 10px;
+    justify-content: space-between;
+  }
+
+  .nav-sp>div {
+    display: flex;
+    align-items: center;
+  }
+
+  .home,
+  .menu {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+  }
+
+  h2 {
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  p,
+  li {
+    font-size: 13px;
+  }
+  
+
+  /* About */
+  .about {
+    margin: 20px auto;
+  }
+
+  .item-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    }
+
+  .circle {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border: 3px solid #999;
+    padding: 3px;
+  }
+
+  .content {
+    margin: 0;
+    padding-left: 20px;
+    align-content: center;
+  }
+
+  /* Works */
+  .works {
+    margin: 20px auto;
+  }
+
+  .item-works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-works>div>p {
+    text-align: center;
+    padding: 0 0 40px 0;
+    margin: 0;
+  }
+
+  .pic-works {
+    width: 500px;
+    padding: 10px;
+  }
+}
