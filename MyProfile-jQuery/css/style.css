@@ -8,6 +8,24 @@ body {
   font-style: normal;
 }
 
+/* TOPに戻るボタン */
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 38px;
+  right: 20px;
+
+  background-color: black;
+  border-radius: 50%;
+  padding: 28px 24px;
+}
+
+.pagetop a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
 /* ナビゲーションメニューのMyProfileの部分 */
 .home {
   border: 1px solid black;
@@ -95,12 +113,12 @@ footer>p {
     font-size: 34px;
     font-weight: bold;
   }
-  
+
   p,
   li {
     font-size: 18px;
   }
-  
+
 
   /* About */
   .about {
@@ -188,12 +206,12 @@ footer>p {
     font-size: 25px;
     font-weight: bold;
   }
-  
+
   p,
   li {
     font-size: 13px;
   }
-  
+
 
   /* About */
   .about {
@@ -210,7 +228,7 @@ footer>p {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-    }
+  }
 
   .circle {
     border-radius: 50%;
