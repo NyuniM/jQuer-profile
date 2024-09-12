@@ -63,16 +63,15 @@ body {
   color: black;
 }
 
-
-
 /* 画像 */
 img {
   max-width: 100%;
   margin: 0 auto;
 }
 
-.mainpic {
+.carouselImg {
   width: 100%;
+  height: auto;
 }
 
 /* フッター */
@@ -254,6 +253,7 @@ footer>p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
   }
 
   .item-works>div>p {
@@ -264,6 +264,58 @@ footer>p {
 
   .pic-works {
     width: 500px;
-    padding: 10px;
+
   }
+}
+
+
+/* フェードインさせる */
+.block {
+  opacity: 0;
+  /* 最初は非表示にしておく */
+  transition: all 2s;
+  /* 動きを滑らかに */
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+/* モーダルコンテンツ */
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  background: none;
+}
+/* 画像部分 */
+.bigimg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 閉じるボタン */
+.modalclose {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
 }

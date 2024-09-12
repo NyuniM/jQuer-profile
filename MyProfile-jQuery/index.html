@@ -22,8 +22,8 @@
         <nav class="nav-pc nav-sp">
             <h1><a href="index.html" class="home hover">MyProfile</a></h1>
             <div>
-                <a href="index.html#about" class="menu hover">About</a>
-                <a href="index.html#works" class="menu hover">Works</a>
+                <a href="#about" class="menu hover">About</a>
+                <a href="#works" class="menu hover">Works</a>
             </div>
         </nav>
     </header>
@@ -33,19 +33,19 @@
         <section id="carousel-section">
             <div class="carousel">
                 <div>
-                    <img class="carouselImg" src="images/main.png">
+                    <img class="carouselImg" src="images/main.png" alt="カメラ" width="700" height="300">
                 </div>
                 <div>
-                    <img class="carouselImg" src="images/main2.png">
+                    <img class="carouselImg" src="images/main2.png" alt="工具" width="700" height="300">
                 </div>
                 <div>
-                    <img class="carouselImg" src="images/main3.png">
+                    <img class="carouselImg" src="images/main3.png" alt="夕焼けとカメラ" width="700" height="300">
                 </div>
             </div>
         </section>
 
         <!-- About -->
-        <section id="about" class="about">
+        <section id="about" class="about block">
             <h2>About</h2>
             <div class="item-about">
                 <div>
@@ -64,20 +64,30 @@
         </section>
 
         <!-- Works -->
-        <section id="works" class="works">
+        <section id="works" class="works block">
             <h2>Works</h2>
-            <div class="item-works">
-                <div>
-                    <img class="pic-works" src="images/works1.png" alt="新潟で撮影した日本海">
-                    <p>新潟に訪れた際に、日本海の雄大さを魅了されて撮影した1枚</p>
+            <div class="inner">
+                <div class="item-works">
+                    <div>
+                        <a href=""><img class="pic-works modalimg" src="images/works1.png" alt="新潟で撮影した日本海"></a>
+                        <p>新潟に訪れた際に、日本海の雄大さを魅了されて撮影した1枚</p>
+                    </div>
+                    <div>
+                        <a href=""><img class="pic-works modalimg" src="images/works2.png" alt="長野で撮影した御嶽山"></a>
+                        <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
+                    </div>
+                    <div>
+                        <a href=""><img class="pic-works modalimg" src="images/works3.png" alt="京都で撮影した日本の町並み"></a>
+                        <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+                    </div>
                 </div>
-                <div>
-                    <img class="pic-works" src="images/works2.png" alt="長野で撮影した御嶽山">
-                    <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
-                </div>
-                <div>
-                    <img class="pic-works" src="images/works3.png" alt="京都で撮影した日本の町並み">
-                    <p>京都で撮影した、明け方の古き良き日本の町並み</p>
+            </div>
+            <!-- モーダル -->
+            <div class="modal">
+                <div class="modal-content">
+                    <!-- モーダルを閉じるボタン -->
+                    <span class="modalclose">&times;</span>
+                    <img src="" alt="" class="bigimg">
                 </div>
             </div>
         </section>
